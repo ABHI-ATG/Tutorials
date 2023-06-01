@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+</head>
+<style>
+    #stop{
+        display: none;
+    }
+</style>
+<body>
+   
+    <button onclick="chalu()">start</button>
+    <button onclick="chalu()">Stop</button>
+    <div id="stop">
+        Stopwatch
+    </div>
+    <script>
+        let y=document.getElementById('stop');
+        function display(){
+        let x=Date();
+            y.innerHTML=x;
+        }
+        setInterval(display,1000);
+    function chalu(){
+        if(y.style.display=="none"){
+            y.style.display="block";
+        }
+        else{
+            y.style.display="none"
+        }
+    }
+    </script>
+</body>
+</html>

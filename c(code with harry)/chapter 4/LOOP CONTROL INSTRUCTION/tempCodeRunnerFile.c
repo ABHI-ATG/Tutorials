@@ -1,0 +1,1 @@
+ printf("the number id %d",number);

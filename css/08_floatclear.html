@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGNMENT</title>
+    <style>
+*{
+box-sizing: border-box;
+}
+.container{
+    border:4px solid black;
+    background-color: rgb(139, 139, 233);
+}
+.item{
+    border:2px solid black;
+    margin:8px 8px;
+    padding:12px 12px;
+    background-color: #f1f17d;
+  }
+ #fruit{
+     float: left;
+     width: 48.5%;
+ }
+ #computer{
+    float:left;
+     width: 48.5%;
+     
+ }
+ #stationary{
+     /*clear:left; or right;*/
+     clear:both;
+     width:100;
+ }
+ p{
+    /* text-align: right;
+    text-align: left;
+    text-align: center; */
+    text-align: justify;
+ }
+ h1{
+     margin:10px 450px;
+width:500px;
+ }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO MY STORE</h1>
+ <div class="container">
+         <div id="fruit" class="item">FRUITS
+<p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sit cumque voluptatibus quisquam temporibus tempora? Expedita est adipisci assumenda deserunt? Aliquid laborum modi doloremque? Mollitia vitae vero unde ut sunt dolores eos, quibusdam ab., ipsum. ipsum dolor sit, amet consectetur adipisicing elit. Fugit inventore perspiciatis culpa voluptas recusandae consequuntur iste maiores tempora ipsum distinctio, animi est optio dignissimos cupiditate. At quae distinctio tenetur exercitationem ad porro vitae quas aperiam illo! Nesciunt possimus repellendus eos.</p></div>
+         <div id="computer" class="item">computer
+<p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perferendis, vitae temporibus illum nemo iste ad sit quo eius tempore voluptate, maiores ea? Beatae, dolor aut aperiam eaque harum a voluptatibus blanditiis consequuntur corporis. ipsum dolor sit, amet consectetur adipisicing elit. Fugit inventore perspiciatis culpa voluptas recusandae consequuntur iste maiores tempora ipsum distinctio, animi est optio dignissimos cupiditate. At quae distinctio tenetur exercitationem ad porro vitae quas aperiam illo! Nesciunt possimus repellendus eos.</p></div>
+         <div id="stationary" class="item">stationary
+<p id="stationarypara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit inventore perspiciatis culpa voluptas recusandae consequuntur iste maiores tempora ipsum distinctio, animi est optio dignissimos cupiditate. At quae distinctio tenetur exercitationem ad porro vitae quas aperiam illo! Nesciunt possimus repellendus eos.</p></div>
+</div>
+</body>
+</html>

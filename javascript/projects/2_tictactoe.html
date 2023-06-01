@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 50px;
+            
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .slide{
+            height: 150px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+        height: 100%;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        #box1{
+            border-right: 3px solid black;
+
+            border-bottom: 3px solid black;
+        }
+        
+        #box2{
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+
+        }
+        #box3{
+            border-left: 3px solid black;
+
+            border-bottom: 3px solid black;
+        }
+        #box4{
+            border-right: 3px solid black;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+        #box5{
+            border-right: 3px solid black;
+            border-left: 3px solid black;
+
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+        #box6{
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+        }
+        #box7{
+            border-right: 3px solid black;
+            border-top: 3px solid black;
+
+        }
+        #box8{
+            border-right: 3px solid black;
+            border-left: 3px solid black;
+            border-top: 3px solid black;
+        }
+        #box9{
+            border-left: 3px solid black;
+            border-top: 3px solid black;
+
+        }
+.result{
+    height: 100px;
+    /* background-color: rgb(226, 175, 175); */
+    width: 700px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <div class="box" id="box1" onclick="cross_circle(1)"></div>
+            <div class="box" id="box2" onclick="cross_circle(2)"></div>
+            <div class="box" id="box3" onclick="cross_circle(3)"></div>
+        </div>
+        <div class="slide">
+            <div class="box" id="box4" onclick="cross_circle(4)"></div>
+            <div class="box" id="box5" onclick="cross_circle(5)"></div>
+            <div class="box" id="box6" onclick="cross_circle(6)"></div>
+        </div>
+        <div class="slide">
+            <div class="box" id="box7" onclick="cross_circle(7)"></div>
+            <div class="box" id="box8" onclick="cross_circle(8)"></div>
+            <div class="box" id="box9" onclick="cross_circle(9)"></div>
+        </div>
+        <div class="result" id="res">
+
+        </div>
+    </div>
+</body>
+<script>
+function final(){
+    let r=document.getElementById('res');
+   let b1,b2,b3,b4,b5,b6,b7,b8,b9;
+   b1=document.getElementById('box1');
+   b2=document.getElementById('box2');
+   b3=document.getElementById('box3');
+   b4=document.getElementById('box4');
+   b5=document.getElementById('box5');
+   b6=document.getElementById('box6');
+   b7=document.getElementById('box7');
+   b8=document.getElementById('box8');
+   b9=document.getElementById('box9');
+if((b1.innerHTML==b2.innerHTML)&&(b1.innerHTML==b3.innerHTML)&&(b1.innerHTML!='')){
+r.innerHTML='WINNER';
+}
+else if((b4.innerHTML==b5.innerHTML)&&(b4.innerHTML==b6.innerHTML)&&(b4.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+else if((b7.innerHTML==b8.innerHTML)&&(b7.innerHTML==b9.innerHTML)&&(b7.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+else if((b1.innerHTML==b4.innerHTML)&&(b1.innerHTML==b7.innerHTML)&&(b1.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+else if((b2.innerHTML==b5.innerHTML)&&(b2.innerHTML==b8.innerHTML)&&(b2.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+else if((b3.innerHTML==b6.innerHTML)&&(b3.innerHTML==b9.innerHTML)&&(b3.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+else if((b1.innerHTML==b5.innerHTML)&&(b1.innerHTML==b9.innerHTML)&&(b1.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+else if((b3.innerHTML==b5.innerHTML)&&(b3.innerHTML==b7.innerHTML)&&(b3.innerHTML!='')){
+    r.innerHTML='WINNER';
+}
+}
+
+
+let w=1;
+
+change=(y)=>{
+  
+    if(w%2==0){
+    y.innerHTML='X';
+    w++;
+    final();
+}
+else{
+    y.innerHTML='O';
+    w++;
+    final();
+}
+}
+let n;
+function cross_circle(n){
+    if(n==1){
+let x=document.getElementById('box1');
+change(x);
+}
+else if(n==2){
+let x=document.getElementById('box2');
+change(x);
+}
+else if(n==3){
+let x=document.getElementById('box3');
+change(x);
+}
+else if(n==4){
+let x=document.getElementById('box4');
+change(x);
+}
+else if(n==5){
+let x=document.getElementById('box5');
+change(x);
+}
+else if(n==6){
+let x=document.getElementById('box6');
+change(x);
+}
+else if(n==7){
+let x=document.getElementById('box7');
+change(x);
+}
+else if(n==8){
+let x=document.getElementById('box8');
+change(x);
+}
+else if(n==9){
+let x=document.getElementById('box9');
+change(x);
+}
+
+}
+</script>
+</html>

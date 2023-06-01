@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    browser events:
+    click
+    context menu
+    mouse over/mouse out
+    mousedown/mouseout
+    mousemove
+
+    submit 
+    focus
+    DOMcontentLoaded
+
+    transitionend
+-->
+<div class="container">
+    hello
+    <p id="para" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aliquid quaerat dolor nam placeat accusantium ipsum eveniet! Repudiandae cumque mollitia, id porro exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum, repudiandae eaque illum eligendi magni quaerat sunt suscipit mollitia praesentium deserunt assumenda excepturi similique adipisci voluptatum nemo neque quos, porro eum iure recusandae voluptate! Illo, iure rerum! Repellat, culpa error omnis doloribus delectus qui vel? vitae velit cupiditate dolor ipsam quam, totam sed nam debitis amet?</p>
+</div>
+<button class="btn" onclick="hide()">submit</button>
+<script>
+
+    // 1. direct 
+    // onclick=alert('ajd');
+
+    // 2.
+    // onclick=function()
+
+    //3. 
+    // getelementbyid
+
+    // 4. 
+    // queryselector
+
+
+
+
+
+// mouse event 
+// mouseover and mouseout 
+//mouseDown and mouseUp
+// mouseenter and  mouseleave 
+
+
+
+
+
+
+
+    let para=document.getElementById('para');
+    para.addEventListener('mouseover',function run(){
+        // alert('hello')
+        console.log('hello')
+    });
+    para.addEventListener('mouseout',function run(){
+        // alert('bye')
+        console.log('bye')
+
+    });
+
+
+
+
+
+
+    function hide(){
+        // let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if(para.style.display!='none'){
+            para.style.display='none'
+        }
+        else{
+            para.style.display='block';
+        }
+    }
+
+
+
+
+
+// keyboard event 
+//onkeypress 
+//onkeydown
+//onkeyup
+//event.code
+//event.code
+
+
+
+// onchange
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

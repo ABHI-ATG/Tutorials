@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDIA QUIRIES</title><style>
+.box{
+  border:2px solid red;
+  color:blue;
+  padding:2px;
+  margin:5px;
+  width:200px;
+  height:100px;
+  /* display:none; */
+}
+@media only screen and (min-width:10px) and (max-width: 100px){
+  #box1{
+    display:block;
+    background-color: rgb(67, 33, 160);
+  } }
+  
+@media (min-width:100px) and (max-width: 200px){
+  #box2{
+    display:block;
+    background-color: rgb(169, 219, 53);
+  }
+} 
+@media (min-width:200px) and (max-width:300px){
+  #box3{
+    display:block;
+    background-color: red;
+  }
+}
+  </style>
+</head>
+<body>
+<div #idd>
+  <div class="box" id="box1">i am pc</div>
+  <div class="box" id="box2">i am laptop</div>
+  <div class="box" id="box3">i am super computer</div>
+</div>
+</body>
+</html>

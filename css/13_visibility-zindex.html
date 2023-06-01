@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+.box{
+    border:2px solid black;
+width:200px;
+height:150px;
+}
+/* z index ki value jiski jyada hogi vo upar aa jayega (for relative position) */
+#box1{background-color:rgb(78, 182, 30);
+    position:relative;
+top:40px;
+z-index:1;}
+#box2{
+    /* visibility sirf element ko hide karta hai
+    display element ke sath sath jagah bhi hata deta tha */
+    /* visibility: hidden; */
+    display: none;
+    background-color:rgb(39, 41, 172);}
+#box3{background-color:red;
+    position:relative;
+top:-39px;
+z-index:2;}
+#box4{background-color:rgb(167, 47, 151);}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

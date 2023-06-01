@@ -1,0 +1,17 @@
+1. how to create database and tables in php
+2. how to create connection with database in php
+3. how to insert data in database with php 
+4. how to select data from database with php
+5. how to update table data with php
+6. how to delete entries from tables in php
+
+
+7. to know the password go to xampp them phpmyadmin then config.ing(php file)
+
+
+8. <?php
+include 'name.php';
+?>
+
+
+9. php $_POST is a php global variable which is used to collect form data after submitting an html form with method="post".

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+      }
+      .main {
+background-color: rgb(253, 44, 44);
+        height: 100vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .line {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #screen {
+          height: 85%;
+          width: 100%;
+        border: 3px solid black;
+        background-color: white;
+      }
+      .box {
+          cursor: pointer;
+        height: 87%;
+        width: 22%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight:bold;
+        background-color: yellow;
+        border-radius: 2px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="line" ><input type="text"id="screen"></div>
+      <div class="line">
+        <div class="box" onclick="getinput('X')">X</div>
+        <div class="box" onclick="getinput('C')">C</div>
+        <div class="box" onclick="getinput('x^2')">x^2</div>
+        <div class="box" onclick="getinput('/')">/</div>
+      </div>
+      <div class="line">
+        <div class="box" onclick="getinput(7)">7</div>
+        <div class="box" onclick="getinput(8)">8</div>
+        <div class="box" onclick="getinput(9)">9</div>
+        <div class="box" onclick="getinput('x')">x</div>
+      </div>
+      <div class="line">
+        <div class="box" onclick="getinput(4)">4</div>
+        <div class="box" onclick="getinput(5)">5</div>
+        <div class="box" onclick="getinput(6)">6</div>
+        <div class="box" onclick="getinput('-')">-</div>
+      </div>
+      <div class="line">
+        <div class="box" onclick="getinput(1)">1</div>
+        <div class="box" onclick="getinput(2)">2</div>
+        <div class="box" onclick="getinput(3)">3</div>
+        <div class="box" onclick="getinput('+')">+</div>
+      </div>
+      <div class="line">
+        <div class="box" onclick="getinput('%')">%</div>
+        <div class="box" onclick="getinput(0)">0</div>
+        <div class="box" onclick="getinput('.')">.</div>
+        <div class="box" onclick="getinput('=')">=</div>
+      </div>
+    </section>
+  </body>
+  <script>
+//     diff = (a, b) => {
+//       return a - b;
+//     };
+//     function sum(a, b) {
+//       return a + b;
+//     }
+//     mult = (a, b) => {
+//       return a * b;
+//     };
+//     divide = (a, b) => {
+//       return a / b;
+//     };
+// let screenValue='';
+//     let sc= document.getElementById('screen');
+//     let button=document.getElementsByClassName('box');
+//     for(item of button){
+//         item.addEventListener('click',(e)=>{
+//             buttonText=e.target.innerText;
+//             console.log(buttonText);
+//             screen.value=buttonText;
+//             if(buttonText=='X'){
+//                 buttonText='*';
+//                 screen.value=buttonText;
+//             }
+//             else if(buttonText=='='){
+//                 screen.innervalue=buttonText;
+//             }
+//         })
+//     }
+//     operation=(a)=>{
+// sc.innerHTML=b+a;
+// b=b+a;
+//     }
+//     dot=()=>{
+//         operation('.');
+//     }
+//     equal=()=>{
+//         operation('=');
+//     }
+
+// zero=()=>{
+//     sc.innerHTML=innervalue;
+// }
+let q=0;
+getinput=(i)=>{
+ let z=i;
+
+    if(z=='x'){
+        i='*';
+    }
+    if(z=='X'){
+    document.getElementById('screen').value="";
+ }
+ else if(z=='+'||z=='-'||z=='x'||z=='/'){
+if(q==0){
+document.getElementById('screen').value+=i;
+q=2;
+}
+ }
+    else if(z=='='){
+document.getElementById('screen').value=eval(document.getElementById('screen').value)
+}
+else{
+document.getElementById('screen').value+=i;
+
+}
+}
+  </script>
+  <script src="index.js"></script>
+</html>

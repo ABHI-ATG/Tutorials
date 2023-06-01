@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:-1px -1px;
+            padding:0px 0px;
+        }
+        #container{
+            display:grid;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'foot foot foot foot';
+        }
+.item{
+    background-color: red;
+    /* padding:24px; */
+    margin:2px 2px;
+    border:2px solid black;
+}
+#nav{
+grid-area:navbar;
+height:4rem;
+}
+#section{
+grid-area:section;
+height:54rem;
+
+}
+#aside{
+grid-area:aside;
+height:54rem;
+
+}
+#foot{
+    grid-area: foot;
+    grid-area: foot;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav" class="item">HOME ABOUT CONTACT US</div>
+        <div id="section"class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni incidunt dignissimos velit repellendus delectus reiciendis, non harum deleniti temporibus blanditiis natus rem sapiente.</div>
+        <div id="aside"class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis culpa iusto animi!</div>
+        <!-- <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div> -->
+    </div>
+    <footer class="item"id="foot">Lorem ipsum dolor sit amet consectetur.</footer>
+</body>
+</html>

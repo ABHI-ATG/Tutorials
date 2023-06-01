@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* height: 1000px; */
+            width: 100%;
+            background-color: red;
+            display: grid;
+            grid-template-columns: 120px 120px 120px;
+            grid-template-rows: 80px 80px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns:   1fr 1fr 1fr;
+            grid-template-rows:400px 400px  ;
+            /* row-gap: 12px; */
+            /* column-gap: 12px; */
+            place-items: center;
+        }
+        .item{
+            /* height: 100px;
+            width: 60px; */
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .item5{
+            grid-column-start: 2;
+            grid-column-end:4;
+        }
+    </style>
+</head>
+<body>
+    <h1>css grid</h1>
+    <div class="container">
+        <div class="item">
+1
+        </div>
+        <div class="item">
+2
+        </div>
+        <div class="item">
+3
+        </div>
+        <div class="item">
+4
+        </div>
+        <div class="item item5">
+5
+        </div>
+        <!-- <div class="item">
+6
+        </div> -->
+    </div>
+</body>
+</html>

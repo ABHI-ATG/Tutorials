@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOX SHADOW AND TEXT SHADOW</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .class {
+        background-color: rgb(9, 247, 9);
+        border: 2px solid red;
+        margin: 4px 5px;
+        /* box-shadow: 10px 15px 12pxblur-radius rgb(31, 31, 18);important */
+        /* box-shadow: 10px 15px 12px 10pxspread radius rgb(31, 31, 18);important */
+        /* box-shadow: inset 3px 5px green; */
+        box-shadow: 10px 12px 7px red;
+      }
+      .class h1{
+          text-shadow:7px 8px 10px white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="class" id="class1">
+        CARD 1
+        <h1>this is html shadow</h1>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+          atque suscipit sit illo sed molestiae, unde fugit animi architecto
+          facere mollitia assumenda quod molestias doloremque culpa. Libero, ut
+          odit voluptatem culpa inventore ipsum fuga?
+        </h3>
+      </div>
+      <div class="class" id="class2">
+        CARD 2
+        <h3>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+          atque suscipit sit illo sed molestiae, unde fugit animi architecto
+          facere mollitia assumenda quod molestias doloremque culpa. Libero, ut
+          odit voluptatem culpa inventore ipsum fuga?
+        </h3>
+      </div>
+      <div class="class" id="class3">
+        CARD 3
+        <h3>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+          atque suscipit sit illo sed molestiae, unde fugit animi architecto
+          facere mollitia assumenda quod molestias doloremque culpa. Libero, ut
+          odit voluptatem culpa inventore ipsum fuga?
+        </h3>
+      </div>
+      <div class="class" id="class4"></div>
+    </div>
+  </body>
+</html>

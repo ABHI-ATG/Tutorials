@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <style>
+        h1{
+            background-color: red;
+            color:yellow;
+        }
+        div p{/*div ke andar jitne p honge sab pe laagu hoga */
+            color:rgb(90, 92, 90);
+            font-weight: bold;
+            background-color: green;
+        }
+        div li p{
+            color:rgb(81, 58, 187);
+            font-weight: bold;
+            background-color: rgb(163, 172, 43);
+        }
+        div > p{/*div ke next p*/
+            color:rgb(230, 59, 187);
+            background-color:rgb(250, 119, 11);
+        }
+        div + p{/*p se pehle div hoga then */
+color:yellow;
+background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is more on selector</h1>
+    <div class="container">
+        <p>yeah</p>
+        <p>yeah 2</p>
+        <div class="row">
+          <ul> <li><p>this is first paragraph</p></li> </ul>
+        </div>
+        <p>this is second paragraph</p>
+        <p>this is last second paragraph</p>
+    </div>
+    <p>this is last paragraph</p>
+</body>
+</html>

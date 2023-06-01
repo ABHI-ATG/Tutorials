@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+// 4. STRINGS
+
+var str1 ="this is a string";
+// console.log(str1);
+
+var str2="hello";
+var str3="abhi";
+var str4="singhal ";
+// console.log(str2+str3 +str4);
+
+// `
+var temp;
+temp=`${str1} how are you ${str3} ${str4}`;
+// console.log(temp);
+
+// lenght 
+var len = str3.length;
+// console.log(len);
+
+// index of 
+var s="abhi singhal";
+
+// first occurence of string
+var pos=s.indexOf('si');
+console.log(pos);
+
+// last occurence of string
+var pos=s.lastIndexOf('si');
+console.log(pos);
+
+// substring from a string
+var p=s.slice(1,5);
+console.log(p);
+var p=s.substring(1,5);//can take negative value 
+console.log(p);
+var p=s.substr(1,5);
+console.log(p);
+
+
+// replaced
+var replaced =str2.replace('string','bye');
+console.log(replaced);
+
+//lowercase and uppercase
+console.log(str1.toUpperCase());
+console.log(str1.toLowerCase());
+
+
+// concatenation
+var newstring=str3.concat(' SINGHAL');
+console.log(newstring);
+
+
+// 
+var whitespaces="  this contains    too    much whitespace     ";
+console.log(whitespaces);
+console.log(whitespaces.trim());
+
+
+// 
+var char3 =str3.charAt(3);
+console.log(char3);
+
+
+// slicing 
+console.log(str3[3]);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object </title>
+</head>
+<body>
+    <div class="container">this is math object</div>
+    <script>
+        let m=Math ;
+        console.log(m);
+
+        let a = 34.56;
+        console.log(a);
+        console.log(Math.round(a));
+
+        let b= 4;
+        console.log(Math.pow(b,3));
+
+        console.log(Math.sqrt(b));
+
+        console.log(Math.ceil(a,3));//rounded down to nearest integer
+
+        console.log(Math.floor(a,3));//rounded up to nearest integer
+
+console.log(Math.abs(a));//absolute value(positive)
+
+console.log(Math.sin(Math.PI));
+console.log(Math.sin(Math.PI/2));
+
+// same for tan , cos
+
+// min and max
+console.log("minimum value of 4, 5, 6 is ",Math.min(4,5,6));
+console.log("maximum value of 4, 5, 6 is ",Math.max(4,5,6));
+
+
+// randum generator 
+let r0_1 = Math.random();
+console.log("the random number is ",r0_1);
+
+let x=1;
+let y=100;
+let r1_100 = x+(y-x)*Math.random();
+console.log(r1_100);
+
+    </script>
+</body>
+</html>
+</html>

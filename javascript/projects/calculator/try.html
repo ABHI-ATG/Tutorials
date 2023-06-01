@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #yeah{
+    font-size: 25px;
+  }
+      #seconds {text-align: center;
+        width: 200px;
+        height: 40px;
+        color: black;
+    font-size: 25px;
+
+      }
+ 
+button{
+  font-size: 15px;
+
+}
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+<div class="container">
+    <div id="yeah">Stopwatch</div>
+    <div id="seconds">00:00:00</div>
+    <button onclick="chal()">start</button>
+    <button onclick="chal()">stop</button>
+  </div>
+
+
+
+
+
+  </body>
+  <script>
+
+
+
+
+
+
+    let second=0;
+    let minute=0;
+    let hour=0;
+    // function clicks() {
+      
+    // }
+   let displaysecond;
+   let displayminute;
+   let displayhour;
+    function time(){
+    let x=document.getElementById('seconds');
+      second++;
+      if(second%60==0){
+        second=0;
+        minute++;
+        if(minute%60==0){
+          minute=0;
+          hour++;
+        }
+      }
+      if(second<10){
+        displaysecond="0"+second;
+      }
+      else{
+        displaysecond=second;
+      }
+      if(minute<10){
+        displayminute="0"+minute;
+      }
+      else{
+        displayminute=minute;
+      }
+      if(hour<10){
+        displayhour="0"+hour;
+      }
+      else{
+        displayhour=hour;
+      }
+      // if(second<10){
+      //   second="0"+second;
+      // }
+      x.innerHTML=(displayhour+" : "+ displayminute+" : "+displaysecond);
+    }
+    interval="null";
+status="stopped";
+    function chal(){
+
+if(status=="stopped"){
+     interval= window.setInterval(time,1000);
+status="started";
+  }
+    else{
+  window.clearInterval(interval);
+status="stopped";
+}
+
+}
+
+  </script>
+</html>

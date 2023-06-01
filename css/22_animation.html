@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYFRAMES AND ANIMATION</title>
+    <style>
+.container{
+    /* display:flex; */
+
+}
+.box{
+    background-color:rgb(7, 8, 6);
+    width:250px;
+    height:250px;
+    position:relative;
+    animation-name:abhi;
+    animation-name:abhi2;
+    animation-duration: 1s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count:infinite;
+    /* animation ek bar hoga  */
+/* animation-fill-mode: alternate; */
+/* animation mai TO ki property tak hoga */
+/* animation-fill-mode: forwards;s */
+/*speed low fast hogi   */
+     animation-timing-function: ese in;
+animation-delay: 1s;
+animation-direction:alternate;
+/* animation:animation-name animation-duration animation-timing-function animation-delay  
+/* animation-iteration-count animation-fill-mode */
+/* animation: abhi3 5s ease-in 1s 1s backwards; */
+}
+@keyframes abhi2{
+    0%{top:0px;
+    left:0px;
+    }25%{top:250px;
+left:0px;
+    }75%{top:100px;
+    left:250px;
+
+    }
+}
+/* @keyframes abhi{
+
+    from{width:20px;
+
+
+    }to{width:800px;
+
+    }
+} */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">THIS IS A BOX</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulating the dom</title>
+
+</head>
+<body>
+    <div id="main">
+        <ul >
+            <li class="con">home </li>
+            <li class="con">contact us </li>
+            <li class="con">about us </li>
+            <li class="con">services</li>
+        </ul>
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        let con=document.getElementsByClassName('con');
+        console.log(con);
+        // let con=document.getElementsByTagName('con');
+
+        // let sel=document.querySelector('.con');
+        // console.log(sel);
+        // let sel=document.querySelectorAll('#main>li');
+        // console.log(sel);
+
+
+        main.appendChild(createdelement);
+        main.replaceChild(createdelement);
+        main.removechild(createdelement);
+
+
+        
+            </script>
+</body>
+</html>

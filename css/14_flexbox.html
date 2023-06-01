@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+.container{
+    border:2px solid red;
+height:800px;
+width:1000px;
+/* INITIALIZE THE CONTAINER AS FLEX */
+display: flex;
+/* FLEX PROPERTIES OF CONTAINER */
+flex-direction:row;/*default*/
+/* flex-direction:column; */
+/* flex-direction:row-reverse; */
+/* flex-direction:column-reverse; */
+flex-wrap:wrap;
+/* flex-wrap:reverse; */
+/* flex-flow: row-reverse wrap; */
+/* justify-content: center; */
+/* justify-content: space-between; */
+/* justify-content: space-evenly; */
+/* justify-content: space-around; */
+/* align-items: center; */
+/* align-items: flex-start; */
+/* align-items: flex-end; */
+/* align-items: stretch; */
+}
+.box{
+    width:150px;
+    height: 100px;
+    background-color:rgb(228, 145, 145);
+    border:2px solid red;
+    margin:20px;
+    /* display: flex; */
+}
+#box1{color:red;
+    /* order:40; *//*jiska order jyada vo last mai jayega*/
+flex: 2 2 344px;/*shrink grow basis*/
+align-self:start;
+align-self:end;
+align-self:center;
+}
+#box2{
+    color:red;
+    /*size jyada ho jayega*/
+/* flex-grow:3; */
+/* flex-shrink:3; */
+}
+#box3{
+    color:red;
+    /* flex-shrink:3; */
+flex-basis:320px;
+/* flex direction is set to row then flex basis control width */
+/* flex direction is set to column then flex basis control height */
+    /* order:20; */
+}
+    </style>
+</head>
+<body><div class="container">
+    <div class="box" id="box1">BOX 1</div>
+    <div class="box" id="box2">BOX 2</div>
+    <div class="box" id="box3">BOX 3</div>
+    <!-- <div class="box" id="box4">BOX 4</div>
+    <div class="box" id="box5">BOX 5</div> -->
+</div>
+</body>
+</html>

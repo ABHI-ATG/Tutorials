@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">this is a container</div>
+    <span id="time">time</span>
+    <script>
+        // setTimeout--> allow us to run the function once after the interval of time
+        // clearTimeout--> allow us to run the function repeatedly after the interval of time
+
+        function greet (name){
+            console.log("hello"+name);
+        }
+
+    //   timeout=setTimeout(greet,5000,"abhi");
+
+        // setTimeout(greet(),5000,"abhi");   ---> wrong as it is calling the function
+
+// cleartimeout(timeout);
+
+
+
+
+// setInterval(greet,1000,"abhi");
+
+
+
+//
+// interval=setInterval(greet,1000,"abhi");
+// clearInterval(interval);
+
+
+
+// 
+function display(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(display,1000);
+
+
+
+    </script>
+</body>
+</html>

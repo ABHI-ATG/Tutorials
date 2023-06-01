@@ -1,0 +1,34 @@
+	non-breaking space	&nbsp;	&#160;
+<	less than	&lt;	&#60;
+>	greater than	&gt;	&#62;
+&	ampersand	&amp;	&#38;
+"	double quotation mark	&quot;	&#34;
+'	single quotation mark (apostrophe)	&apos;	&#39;
+¢	cent	&cent;	&#162;
+£	pound	&pound;	&#163;
+¥	yen	&yen;	&#165;
+€	euro	&euro;	&#8364;
+©	copyright	&copy;	&#169;
+®	registered trademark	&reg;	&#174;
+Note: Entity names are case sensitive.
+
+Combining Diacritical Marks
+A diacritical mark is a "glyph" added to a letter.
+
+Some diacritical marks, like grave (  `) and acute (  ´) are called accents.
+
+Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.
+
+Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page.
+
+Here are some examples:
+
+Mark	Character	Construct	Result
+ `	a	a&#768;	a`
+ ´	a	a&#769;	a´
+^	a	a&#770;	a^
+ ~	a	a&#771;	a~
+ `	O	O&#768;	O`
+ ´	O	O&#769;	O´
+^	O	O&#770;	O^
+ ~	O	O&#771;	O~

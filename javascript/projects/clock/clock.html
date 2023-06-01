@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #mains {
+        background-color: blue;
+        width: auto;
+        height: 47rem;
+      }
+      #head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff5508;
+        border: 16px solid black;
+        height: 150px;
+        margin: 0px 0px 100px 0px;
+      }
+      #time {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-family: fantasy;
+        font-size: 35px;
+        align-items: center;
+        background-color: rgb(253, 230, 21);
+        border: 17px solid rgb(58, 44, 44);
+        color: rgb(76, 0, 255);
+        height: 280px;
+        width: 300px;
+        border-radius: 164px;
+        padding: 5px 5px;
+      }
+      #time:hover{
+background-color:  #ff5508;
+color: rgb(160, 255, 142);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mains">
+      <div id="head">
+        <h1>The Indian Standard Time Is :</h1>
+      </div>
+      <div id="time"></div>
+    </div>
+
+    <script>
+      function time() {
+        let t = new Date();
+        let a = t.getDate();
+        let str = a;
+        let b = t.getMonth();
+        let str1 = b;
+        let c = t.getFullYear();
+        let str3 = c;
+        let d = t.getHours();
+        let str4 = d;
+        let e = t.getMinutes();
+        let str5 = e;
+        let f = t.getSeconds();
+        let str6 = f;
+        // console.log(t);
+        let str7 = `${str} / ${str1} / ${str3}<br><br>${str4} : ${str5} : ${str6} `;
+        document.getElementById("time").innerHTML = str7;
+      }
+      setInterval(time, 1000);
+    </script>
+  </body>
+</html>
