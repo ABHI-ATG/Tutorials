@@ -1,0 +1,105 @@
+// git --version
+
+
+# global user name and email
+// git config --global user.name "FIRST_NAME LAST_NAME"
+// git config --global user.email "MY_NAME@example.com"
+
+
+#  To set repository-specific username/email configuration:
+// git config user.name "FIRST_NAME LAST_NAME"
+// git config user.email "MY_NAME@example.com"
+
+
+# to know global username or email
+// git config user.name
+// git config user.email
+
+
+// git config --list
+
+
+// mkdir name
+// cd name
+
+
+// on the folder
+// git init
+// git status
+
+
+// git clone url
+
+// git remote -v
+// git remote rename origin upstream
+// git remote add origin url
+// git remote set-url origin https://github.com/ABHI-ATG/Service-Provider.git
+
+
+
+/* Files in your Git repository folder can be in one of 2 states:
+Tracked - files that Git knows about and are added to the repository
+Untracked - files that are in your working directory, but not added to the repository
+*/
+
+# to add files in staging area
+// git add name.ext
+# to add all files
+// git add -all 
+// git add .
+
+# commit is point where we can go back (if we want)
+// git commit -m "jai shree ram"
+
+
+# directly commit without doing staging area
+// git commit -a -m "jai shree ram"
+
+# to check all commit history
+// git log
+
+
+# Branch
+// git branch name
+# to know all the branches
+// git branch 
+# to go another branch
+// git checkout name
+
+
+# emergency branch
+// git checkout -b emergency-fix
+
+
+// press q when you stuch in git log or git help
+
+
+# to add remote url
+// copy url from repo of github
+// git remote add origin url
+
+
+
+#  fetch + merge == pull
+// git fetch origin
+// git diff origin/master (to see changes)
+// git merge orgin/master
+
+
+// git pull origin master
+
+
+# to push
+// git push
+// git push --set-upstream origin master
+
+
+// if we want to revert some commits
+// git revert <id>
+
+// git reset
+
+
+// to pull all changes of remote repository to local repository
+// sync the chages
+// pull origin master
